@@ -24,9 +24,14 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Main Method Started...");
+<<<<<<< Updated upstream
             //Method1();
             Method2();
             Method1();
+=======
+            Method1();
+            //Method2();
+>>>>>>> Stashed changes
             Console.WriteLine("Main Method End..");
             Console.ReadKey();
         }
