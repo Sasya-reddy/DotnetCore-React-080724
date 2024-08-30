@@ -15,7 +15,7 @@ namespace XUnitTest
            
             //Arrange
             Calculate obj = new Calculate();
-            int expected = 30;
+            int expected = 5;
             //Act
             int actual = obj.Add(1, 4);
             
