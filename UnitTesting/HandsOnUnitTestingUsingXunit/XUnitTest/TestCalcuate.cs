@@ -17,7 +17,7 @@ namespace XUnitTest
             Calculate obj = new Calculate();
             int expected = 30;
             //Act
-            int actual = obj.Add(1, 2);
+            int actual = obj.Add(1, 4);
             
             //Assessrt
             Assert.Equal(expected, actual); //expected value with actual values is tested in this assessrt
@@ -28,7 +28,7 @@ namespace XUnitTest
         {
             Calculate obj = new Calculate();
             int actual = obj.Div(10,2);
-            Assert.Equal(5,actual);
+            Assert.Equal(12,actual);
             
         }
         [Fact]
