@@ -8,7 +8,7 @@ namespace CalculateService
     {
         public static double Square(double a)
         {
-            return a * a;
+            return a + a;
         }
     }
 }
