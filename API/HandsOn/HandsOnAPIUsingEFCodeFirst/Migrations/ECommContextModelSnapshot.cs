@@ -88,6 +88,29 @@ namespace HandsOnAPIUsingEFCodeFirst.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("HandsOnAPIUsingEFCodeFirst.Entities.Transaction", b =>
+                {
+                    b.Property<Guid>("TransactionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("OrderId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("PaymentMode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TransactionAmt")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("TransactionId");
+
+                    b.ToTable("Transactions");
+                });
+
             modelBuilder.Entity("HandsOnAPIUsingEFCodeFirst.Entities.User", b =>
                 {
                     b.Property<int>("UserId")
